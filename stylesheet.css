@@ -11,5 +11,5 @@ body{
   background: linear-gradient(to right, rgba(185,182,237,1) 0%, rgba(37,34,226,1) 0%, rgba(119,113,239,1) 43%, rgba(150,146,238,1) 70%, rgba(185,182,237,1) 100%);
   }
 li{
-  margin-bottom:20px;
+  margin-bottom:10px;
 }
