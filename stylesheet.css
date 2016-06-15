@@ -15,14 +15,15 @@ header{
 }
 nav{
   position:relative;
-  width:100%;
+  width:95%;
+  height:85%;
   top:145px;
 }
 aside{
   position:fixed;
   height:100%;
   background:red;
-  left:600px;
+  left:700px;
 }
 body{
   background: rgba(185,182,237,1);
@@ -37,8 +38,4 @@ body{
 }
 li{
   margin-bottom:10px;
-}
-img{
-  width:275px;
-  height:200px;
 }
