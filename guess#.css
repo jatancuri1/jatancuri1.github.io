@@ -1,0 +1,78 @@
+h1, h3, form, h6, h5{
+	text-align:center;
+}
+button {
+	background-color:#44c767;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:2px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:4px 17px;
+	text-decoration:none;
+}
+button:hover {
+	background-color:#5cbf2a;
+}
+button:active {
+	position:relative;
+	top:1px;
+}
+.buttons{
+	display:inline-block;
+}
+body {
+	background-color:white;
+}
+#guess_list{
+	position: fixed;
+	left:0px;
+	top:0px;
+	width: 300px;
+	height: 100%;
+	background-color: #2491f9;
+	overflow:auto;
+}
+h2 {
+	font-family: cursive;
+	color: white;
+	font-weight: normal;
+	font-size:270%;
+	text-align:center;
+	text-decoration:underline;
+}
+p {
+	font-family:Georgia;
+	text-align:center;
+	color: red;
+	font-size:200%;
+}
+#main_part {
+	position: fixed;
+	top: 0px;
+	left:300px;
+	right:0px;
+	background-color:#cc99ff;
+	height:50%;
+}
+#response {
+	position: fixed;
+	bottom: 0px;
+	left:300px;
+	right:0px;
+	background-color:#fbd7d3;
+	height:50%;
+}
+h6 {
+	color:blue;
+	font-size: 250%;
+}
+h5 {
+	font-size:90%;
+	font-style: italic;
+}
+}
