@@ -15,7 +15,7 @@ header{
 }
 nav{
   position:relative;
-  width:70%;
+  width:60%;
   top:0;
   background:blue;
 }
@@ -24,7 +24,7 @@ aside{
   position:relative;
   top:145px;
   background:blue;
-  width:30%;
+  width:40%;
 }
 
 li{
