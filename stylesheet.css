@@ -20,13 +20,15 @@ nav{
   top:145px;
 }
 aside{
+  display:inline;
   position:fixed;
-  height:100%;
+  width:100%;
   right:0;
   top:145px;
+  left:0;
 }
 img{
-  width:275px;
+  heigth:20em;
 }
 body{
   background: rgba(185,182,237,1);
