@@ -23,7 +23,7 @@ aside{
   position:fixed;
   height:100%;
   background:red;
-  left:700px;
+  right:0;
 }
 body{
   background: rgba(185,182,237,1);
