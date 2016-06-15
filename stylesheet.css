@@ -22,11 +22,11 @@ nav{
 aside{
   position:fixed;
   height:100%;
-  background:red;
   right:0;
+  top:145px;
 }
 img{
-  width:200px;
+  width:275px;
 }
 body{
   background: rgba(185,182,237,1);
