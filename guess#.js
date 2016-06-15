@@ -1,28 +1,36 @@
-<html>
-<body>
-<script>
-var x = Math.floor(Math.random() * 100) + 1;
-var turns = 5;
-var hint = 'Guess my number, 1-100!';
-
-while (turns > 0) {
-  var guess = prompt(hint +
-      ' You have ' + turns + ' guesses left.');
-  if (!guess) break;
-  guess = Number(guess);
-  if (guess == x) {
-    document.write('<p>YOU WIN!</p>' +
-      '<p><img src="/images/photo/gold_trophy.jpg">');
-    turns = 0;
-  } else {
-    hint = 'Nope.';
-    if (guess < x) hint += ' Too small!';
-    if (guess > x) hint += ' Too big!';
-    turns = turns - 1;
-  }
-}
-alert('The secret number was ' + x + '.');
-</script>
-</body>
-</html>
-​
+$(document).ready(function(){
+	$("#response").empty();
+	var random_num = Math.floor((Math.random()*100) + 1);
+	//create click event for submit button
+	var count = 0;
+	$("#submit").click(function(){
+    		var first = $("#guess").val();
+    		var response= "<p>" + first + "</p>";
+    		var count = count +1;
+    		var guesses = "<h5>So far "+ count +" guesses</h5>"
+    		$("#guess_list").append(response);
+    		$('#guess').val('');
+    		$( "h5" ).remove();
+    		$("#main_part").append(guesses);
+		if (first == random_num) {
+			$("#response").empty();
+		        $("#response").append("<h6>"+ first +"</h6>");
+		        $("#response").append("<h1>Good Job you guessed my number!</h1>");
+		        $("#response").delay(600).append("<h3>Do you want a cookie??</h3>");
+		        $("#response").css("background-color","grey");
+                 } 
+		 else if (first < random_num) {
+		       	$("#response").empty();
+		        $("#response").append("<h6>"+ first +"</h6>");
+	                $("#response").append("<h1>Your Guess is too low</h1>");
+		        $("#response").css("background-color","red");
+                 } 
+	         else {
+		     	$("#response").empty();
+	                $("#response").append("<h6>"+ first +"</h6>");
+		        $("#response").append("<h1>Your Guess is too high</h1>");
+		        $("#response").css("background-color","orange");
+	         }
+	
+	});
+});
